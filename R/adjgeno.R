@@ -13,7 +13,7 @@
 adjgeno<-function(geno,evec,pca_num) {
 	evec<-as.matrix(evec)
 
-	geno<-geno%*%evec[,1:pca_num]%*%t(evec[,1:pca_num])
+	geno1<-geno%*%evec[,1:pca_num]%*%t(evec[,1:pca_num])
 
 	geno <- geno-geno1;
 
